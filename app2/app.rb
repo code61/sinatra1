@@ -6,6 +6,6 @@ end
 
 
 get '/:name' do
-    @name = params[:name]
+    @name = params[:name].capitalize
     erb :greet
 end

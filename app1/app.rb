@@ -1,10 +1,10 @@
 require 'sinatra'
 
 get '/' do
-    "hello"
+    "Hello there!"
 end
 
 
-# get '/:name' do
-#     params[:name]
-# end
+get '/:name' do
+    "Hello #{params[:name].capitalize}!"
+end
